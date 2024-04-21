@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 228);
+    color: rgb(0, 0, 0);
+    
+}
+
+.cabecalho {
+    padding: 3% 10%;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    /* justify-content: flex-start; */
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #242424;
+    text-decoration: none;
+}
+
+/* .cabecalho__menu__link :hover {
+    color: #007bff;
+} */
+
+.apresentacao {
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: "Krona One", sans-serif;
+    font-size: 36px;
+    color: #242424;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One' sans-serif;   
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    background-color: rgb(255, 255, 228);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 278px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #242424;
+    padding: 21.5px 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #242424;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentacao__links__link:hover {
+    background-color: rgb(231, 226, 226);
+    padding: 5%;
+    border: 2px solid #4b4b6d;
+    
+}
+
+/* .foto__felipe {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 35px;
+} */
+
+.rodape {
+    color: white;
+    background-color: #242424;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
