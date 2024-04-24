@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     background-color: rgb(255, 255, 228);
     color: rgb(0, 0, 0);
-
+    
 }
 
 .cabecalho {
@@ -31,70 +31,48 @@ body {
     text-decoration: none;
 }
 
+/* .cabecalho__menu__link :hover {
+    color: #007bff;
+} */
+
 .apresentacao {
-    padding: 0% 10%;
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .apresentacao__conteudo {
     width: 615px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* gap: 10px; */
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
     font-family: "Krona One", sans-serif;
-    font-size: 23px;
+    font-size: 36px;
     color: #242424;
-    padding: 0px 0px 10px 0px;
 }
 
-.apresentacao__conteudo__cabecalho {
+.apresentacao__conteudo__paragrafo__sobre__mim {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     width: 100%;
-    padding: 0px 0px 10px 0px;
 }
-
-.apresentacao__conteudo__objetivos {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #242424;
-    padding: 0px 0px 10px 0px;
-}
-
-.apresentacao__conteudo__objetivos_descricao {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-}
-
-.apresentacao__conteudo__formacao {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #242424;
-    padding: 0px 0px 10px 0px;
-}
-
-.apresentacao__conteudo__formacao_descricao {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-}
-
 .apresentacao__links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    padding: 0px 0px 10px 0px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One' sans-serif;   
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
@@ -121,34 +99,11 @@ body {
     
 }
 
-.experiencias__profissionais {
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.experiencias__profissionais__titulo {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #242424;
-    padding: 0px 0px 10px 0px;
-}
-
-.experiencias__profissionais__titulo__granbelo{
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    color: #242424;
-    padding: 0px 0px 10px 0px;
-}
-
-.experiencias__profissionais__titulo__granbelo__descricao {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+/* .foto__felipe {
     box-sizing: border-box;
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-}
+    width: 50%;
+    padding: 35px;
+} */
 
 .rodape {
     color: white;
