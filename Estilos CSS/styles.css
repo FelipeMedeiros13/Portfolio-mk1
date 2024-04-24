@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-hover: #EAD7BB;
+    --cor-primária: #FFF2D8;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #113946;
+    --cor-rodape: white;
+    --fonte-kronaone: 'krona One', sans-serif;
+    --fonte-montserrat: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: rgb(255, 255, 228);
-    color: rgb(0, 0, 0);
+    background-color: var(--cor-primária);
+    color: var(--cor-secundaria);
     
 }
 
@@ -19,27 +29,23 @@ body {
 
 .cabecalho__menu {
     display: flex;
-    /* justify-content: flex-start; */
     gap: 40px;
 }
 
 .cabecalho__menu__link {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #242424;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
-
-/* .cabecalho__menu__link :hover {
-    color: #007bff;
-} */
 
 .apresentacao {
     padding: 3% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--cor-terciaria);
 }
 
 
@@ -55,59 +61,65 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* gap: 10px; */
 }
 
 .apresentacao__conteudo__titulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-kronaone);
     font-size: 36px;
-    color: #242424;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__curriculo__conteudo__titulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-kronaone);
     font-size: 23px;
-    color: #242424;
+    color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
 }
 
 .apresentacao__curriculo__conteudo__cabecalho {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
     padding: 0px 0px 10px 0px;
 }
 
 .chamar__atencao {
-    color: #242424;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__curriculo__conteudo__objetivos {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: var(--cor-terciaria);
+    padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__curriculo__conteudo__objetivos_descricao {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__curriculo__conteudo__formacao {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     font-size: 20px;
-    color: #242424;
+    color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__curriculo__conteudo__formacao_descricao {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
     padding: 0px 0px 10px 0px;
@@ -131,46 +143,53 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family: 'Krona One' sans-serif;   
+    font-family: var(--fonte-kronaone);   
     font-weight: 400;
     font-size: 24px;
 }
 .apresentacao__links__link {
-    background-color: rgb(255, 255, 228);
+    background-color: var(--cor-primária);
     display: flex;
     justify-content: center;
     gap: 16px;
     width: 278px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #242424;
+    border: 2px solid var(--cor-terciaria);
     padding: 21.5px 20px;
-    font-family: "Montserrat", sans-serif;
-    color: #242424;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-terciaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .apresentacao__curriculo__links__link {
-    background-color: rgb(255, 255, 228);
+    background-color: var(--cor-primária);
     display: flex;
     justify-content: center;
     gap: 16px;
     width: 278px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #242424;
+    border: 2px solid var(--cor-terciaria);
     padding: 21.5px 20px;
-    font-family: "Montserrat", sans-serif;
-    color: #242424;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-terciaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .apresentacao__links__link:hover {
-    background-color: rgb(231, 226, 226);
+    background-color: var(--cor-hover);
+    padding: 5%;
+    border: 2px solid var(--cor-terciaria);
+    
+}
+
+.apresentacao__curriculo__links__link:hover {
+    background-color: var(--cor-hover);
     padding: 5%;
     border: 2px solid #4b4b6d;
     
@@ -184,22 +203,22 @@ body {
 }
 
 .experiencias__curriculo__profissionais__titulo {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     font-size: 20px;
-    color: #242424;
+    color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .experiencias__curriculo__profissionais__titulo__granbelo{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     font-size: 18px;
-    color: #242424;
+    color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .experiencias__curriculo__profissionais__titulo__granbelo__descricao {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
     padding: 0px 0px 10px 0px;
@@ -212,12 +231,12 @@ body {
 }
 
 .rodape {
-    color: white;
-    background-color: #242424;
+    color: var(--cor-rodape);
+    background-color: var(--cor-terciaria);
     padding: 24px;
     display: flex;
     justify-content: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
     font-size: 24px;
     font-weight: 400;
 }
