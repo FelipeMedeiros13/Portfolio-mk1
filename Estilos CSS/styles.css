@@ -34,7 +34,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -45,12 +45,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
     color: var(--cor-terciaria);
 }
 
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -65,26 +66,26 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-family: var(--fonte-kronaone);
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--cor-terciaria);
 }
 
 .apresentacao__curriculo__conteudo__titulo {
     font-family: var(--fonte-kronaone);
-    font-size: 23px;
+    font-size: 1.44rem;
     color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
 }
 
 .apresentacao__curriculo__conteudo__cabecalho {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
@@ -97,13 +98,13 @@ body {
 
 .apresentacao__curriculo__conteudo__objetivos {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__curriculo__conteudo__objetivos_descricao {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
@@ -112,13 +113,13 @@ body {
 
 .apresentacao__curriculo__conteudo__formacao {
     font-family: var(--fonte-montserrat);
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .apresentacao__curriculo__conteudo__formacao_descricao {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
@@ -145,21 +146,21 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-kronaone);   
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__links__link {
     background-color: var(--cor-primária);
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 278px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria);
     padding: 21.5px 20px;
     font-family: var(--fonte-montserrat);
     color: var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -176,7 +177,7 @@ body {
     padding: 21.5px 20px;
     font-family: var(--fonte-montserrat);
     color: var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -196,7 +197,7 @@ body {
 }
 
 .experiencias__curriculo__profissionais {
-    width: 615px;
+    width: 38.44rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -204,20 +205,20 @@ body {
 
 .experiencias__curriculo__profissionais__titulo {
     font-family: var(--fonte-montserrat);
-    font-size: 20px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .experiencias__curriculo__profissionais__titulo__granbelo{
     font-family: var(--fonte-montserrat);
-    font-size: 18px;
+    font-size: 1.13rem;
     color: var(--cor-terciaria);
     padding: 0px 0px 10px 0px;
 }
 
 .experiencias__curriculo__profissionais__titulo__granbelo__descricao {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-family: var(--fonte-montserrat);
     box-sizing: border-box;
     width: 100%;
@@ -233,10 +234,24 @@ body {
 .rodape {
     color: var(--cor-rodape);
     background-color: var(--cor-terciaria);
-    padding: 24px;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     font-family: var(--fonte-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 3%  10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
