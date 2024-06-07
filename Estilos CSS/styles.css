@@ -259,4 +259,13 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
+    /* .apresentacao__curriculo__conteudo {
+        width: auto;
+        justify-content: center;
+    } */
+
+    .foto__felipe {
+        width: 70%;
+    }
 }
